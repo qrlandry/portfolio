@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub, AiFillInstagram} from 'react-icons/ai'
 import Image from 'next/image';
+import deved from '../public/dev-ed.png'
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-slate-300 font-medium'> Quinn Landry </h2>
-            <h3 className='text-2xl py-2'> FullStack Developer </h3>
+            <h3 className='text-2xl py-2'> Fullstack Developer </h3>
             <p className='text-md py-5 leading-8 text-gray-800'>
               Description
             </p>
@@ -40,12 +41,15 @@ export default function Home() {
             <a target='_blank'href='https://github.com/qrlandry'> <AiFillGithub /> </a>
             <a target='_blank' href='#'> <AiFillInstagram /> </a>
           </div>
+          <div className='relative mx-auto rounded-full overflow-hidden w-80 h-80 mt-5'>
+            <Image src={deved} layout='fill' objectFit='cover' />
+          </div>
         </section>
 
         <section>
-          <div className='text-center'>
+          <div className='text-center mt-20'>
             <h3 className='text-3xl py-1'> Skills </h3>
-            <p className='text-gray-800 py-2 leading-8'>
+            <p className='text-md text-gray-800 py-2 leading-8'>
                Throughout my cohort at General Assembly I learned a numerous amount of skills
                such as: Html, CSS, Node.js, Django, Python, Javascript, React and Postgresql.
                I also have knowledge in Java, C and DrRacket.
@@ -53,12 +57,13 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
+          <div className='mt-20'>
             <h3 className='text-3xl py-1'> Projects </h3>
             <p className='text-md py-5 leading-8 text-gray-800'>
               Description
             </p>
           </div>
+
         </section>
       </main>
     </div>
